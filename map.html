@@ -513,41 +513,7 @@
   .filter-clear-btn { display: block; margin: 6px auto 10px; padding: 5px 16px; border-radius: 14px; font-size: 11px; font-weight: bold; border: 1px solid rgba(197,74,44,0.3); background: rgba(197,74,44,0.08); color: var(--chili); cursor: pointer; transition: all 0.2s; }
   .filter-clear-btn:hover { background: rgba(197,74,44,0.15); }
 
-  /* ===== 旅友社区 ===== */
-  .comm-wrap { padding: 4px 2px 20px; }
-  .comm-auth-card { background: rgba(255,255,255,0.75); border: 1px solid rgba(31,79,58,0.15); border-radius: 14px; padding: 16px 14px; margin: 8px 0; box-shadow: 0 3px 12px rgba(31,79,58,0.08); }
-  .comm-auth-title { font-size: 15px; font-weight: 900; color: var(--mountain); text-align: center; margin-bottom: 3px; }
-  .comm-auth-sub { font-size: 10.5px; color: var(--ink-deep); opacity: 0.55; text-align: center; margin-bottom: 12px; line-height: 1.6; }
-  .comm-auth-tabs { display: flex; border: 1px solid rgba(31,79,58,0.25); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
-  .comm-auth-tab { flex: 1; padding: 7px; text-align: center; font-size: 12px; font-weight: bold; cursor: pointer; background: rgba(255,255,255,0.6); color: var(--ink-deep); opacity: 0.55; transition: all 0.2s; }
-  .comm-auth-tab.active { background: var(--mountain); color: #fff; opacity: 1; }
-  .comm-field { margin-bottom: 9px; }
-  .comm-field input { width: 100%; box-sizing: border-box; padding: 8px 10px; border-radius: 9px; border: 1px solid rgba(31,79,58,0.25); background: rgba(255,255,255,0.85); font-size: 13px; outline: none; }
-  .comm-field input:focus { border-color: var(--mountain); box-shadow: 0 0 0 2px rgba(31,79,58,0.12); }
-  .comm-submit { width: 100%; padding: 9px; border: none; border-radius: 9px; background: linear-gradient(135deg, #1f4f3a, #2d7a56); color: #fff; font-size: 13px; font-weight: 900; cursor: pointer; margin-top: 3px; letter-spacing: 2px; }
-  .comm-submit:hover { filter: brightness(1.1); }
-  .comm-err { font-size: 11px; color: var(--chili); text-align: center; min-height: 15px; margin-top: 6px; }
-  .comm-user-bar { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.75); border: 1px solid rgba(31,79,58,0.15); border-radius: 12px; padding: 9px 11px; margin: 6px 0; }
-  .comm-user-bar .comm-avatar { width: 34px; height: 34px; font-size: 20px; }
-  .comm-logout { margin-left: auto; font-size: 10.5px; color: var(--chili); cursor: pointer; border: 1px solid rgba(197,74,44,0.3); padding: 3px 9px; border-radius: 10px; user-select: none; }
-  .comm-logout:hover { background: rgba(197,74,44,0.1); }
-  .comm-composer { background: rgba(255,255,255,0.75); border: 1px solid rgba(31,79,58,0.15); border-radius: 14px; padding: 12px; margin: 8px 0 12px; }
-  .comm-composer select, .comm-composer textarea { width: 100%; box-sizing: border-box; border: 1px solid rgba(31,79,58,0.25); border-radius: 9px; background: rgba(255,255,255,0.9); font-size: 12.5px; padding: 7px 9px; outline: none; font-family: inherit; }
-  .comm-composer textarea { min-height: 64px; resize: vertical; margin-top: 8px; }
-  .comm-stars-pick { display: flex; gap: 3px; font-size: 21px; margin: 8px 0 2px; cursor: pointer; user-select: none; }
-  .comm-stars-pick span { color: rgba(31,79,58,0.22); transition: color 0.15s, transform 0.15s; }
-  .comm-stars-pick span.on { color: #e8a33d; }
-  .comm-stars-pick span:hover { transform: scale(1.2); }
-  .comm-photo-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
-  .comm-photo-item { position: relative; width: 62px; height: 62px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(31,79,58,0.2); }
-  .comm-photo-item img { width: 100%; height: 100%; object-fit: cover; }
-  .comm-photo-del { position: absolute; top: 1px; right: 1px; background: rgba(0,0,0,0.55); color: #fff; font-size: 10px; width: 16px; height: 16px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; }
-  .comm-add-photo { width: 62px; height: 62px; border: 1.5px dashed rgba(31,79,58,0.35); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 19px; color: var(--mountain); cursor: pointer; opacity: 0.7; }
-  .comm-add-photo:hover { opacity: 1; background: rgba(31,79,58,0.06); }
-  .comm-add-photo i { font-style: normal; font-size: 8.5px; margin-top: 1px; }
-  .comm-feed-title { font-size: 12.5px; font-weight: 900; color: var(--mountain); margin: 12px 2px 7px; display: flex; align-items: center; justify-content: space-between; }
-  .comm-feed-title .comm-count { font-size: 10.5px; opacity: 0.55; font-weight: normal; }
-  /* ===== 右上角悬浮小窗（文旅资讯 + 旅友社区） ===== */
+  /* ===== 右上角悬浮小窗（文旅资讯） ===== */
   .comm-float { position: absolute; right: 18px; top: 15px; width: 344px; max-height: 80vh; display: flex; flex-direction: column; background: var(--glass-light); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); border-radius: 16px; box-shadow: 0 14px 44px rgba(0,0,0,0.2); z-index: 1002; border: 1px solid rgba(255,255,255,0.45); overflow: hidden; transition: transform 0.32s cubic-bezier(0.4,0,0.2,1), opacity 0.3s; }
   .comm-float-head { display: flex; align-items: center; justify-content: space-between; padding: 9px 10px 9px 14px; background: linear-gradient(135deg, rgba(31,79,58,0.95), rgba(43,106,159,0.9)); color: #fff; flex-shrink: 0; }
   .comm-float-tabs { display: flex; gap: 4px; }
@@ -571,7 +537,6 @@
     .comm-float-mini { top: 58px; }
   }
   /* 社区内地区筛选 */
-  .comm-region-bar { display: flex; flex-wrap: wrap; gap: 5px; padding: 8px 10px 4px; position: sticky; top: 0; background: var(--glass-light); z-index: 3; }
   .cr-chip { font-size: 11px; padding: 3px 9px; border-radius: 11px; background: rgba(31,79,58,0.08); color: var(--ink-deep); cursor: pointer; transition: all 0.18s; border: 1px solid transparent; }
   .cr-chip:hover { background: rgba(31,79,58,0.16); }
   .cr-chip.active { background: var(--mountain); color: #fff; font-weight: 700; }
@@ -595,89 +560,9 @@
   .sd-ai-sec { font-size: 12px; line-height: 1.6; color: #444; margin-bottom: 4px; }
   .sd-ai-sec b { color: var(--mountain); }
   .sd-ai-note { font-size: 10px; color: #999; margin-top: 6px; }
-  .comm-post { background: rgba(255,255,255,0.8); border: 1px solid rgba(31,79,58,0.13); border-radius: 13px; padding: 11px 12px; margin-bottom: 10px; box-shadow: 0 2px 8px rgba(31,79,58,0.05); animation: commPostIn 0.3s ease; }
   @keyframes commPostIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-  .comm-post-head { display: flex; align-items: center; gap: 8px; }
-  .comm-avatar { width: 30px; height: 30px; border-radius: 50%; background: rgba(31,79,58,0.1); display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
-  .comm-post-user b { font-size: 12.5px; color: var(--ink-deep); display: block; }
-  .comm-post-user .comm-time { font-size: 10px; opacity: 0.5; }
-  .comm-post-spot { display: inline-flex; align-items: center; gap: 4px; margin-top: 7px; font-size: 11px; font-weight: bold; color: var(--chili); background: rgba(197,74,44,0.08); border: 1px solid rgba(197,74,44,0.2); padding: 3px 9px; border-radius: 10px; cursor: pointer; }
-  .comm-post-spot:hover { background: rgba(197,74,44,0.16); }
-  .comm-post-stars { font-size: 12px; color: #e8a33d; margin-top: 6px; letter-spacing: 1px; }
-  .comm-post-stars .comm-score { color: var(--ink-deep); font-weight: 900; margin-left: 4px; }
-  .comm-post-text { font-size: 12px; color: var(--ink-deep); line-height: 1.75; margin-top: 6px; white-space: pre-wrap; word-break: break-word; }
-  .comm-post-imgs { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
-  .comm-post-imgs img { width: 84px; height: 84px; object-fit: cover; border-radius: 9px; cursor: zoom-in; border: 1px solid rgba(31,79,58,0.15); transition: transform 0.15s; }
-  .comm-post-imgs img:hover { transform: scale(1.04); }
-  .comm-post-actions { display: flex; gap: 14px; margin-top: 9px; padding-top: 8px; border-top: 1px dashed rgba(31,79,58,0.15); font-size: 11.5px; }
-  .comm-act { cursor: pointer; color: var(--ink-deep); opacity: 0.65; user-select: none; }
-  .comm-act:hover { opacity: 1; }
-  .comm-act.liked { color: var(--chili); opacity: 1; font-weight: bold; }
-  .comm-comments { margin-top: 8px; background: rgba(31,79,58,0.045); border-radius: 9px; padding: 8px 9px; }
-  .comm-comment { font-size: 11px; margin-bottom: 6px; line-height: 1.6; }
-  .comm-comment b { color: var(--mountain); }
-  .comm-comment .comm-time { opacity: 0.45; font-size: 9.5px; margin-left: 5px; }
-  .comm-comment-input { display: flex; gap: 6px; margin-top: 4px; }
-  .comm-comment-input input { flex: 1; border: 1px solid rgba(31,79,58,0.2); border-radius: 8px; padding: 5px 9px; font-size: 11.5px; outline: none; background: rgba(255,255,255,0.9); }
-  .comm-comment-input button { border: none; background: var(--mountain); color: #fff; border-radius: 8px; padding: 5px 12px; font-size: 11px; cursor: pointer; font-weight: bold; }
-  .comm-rank { background: rgba(255,255,255,0.75); border: 1px solid rgba(31,79,58,0.15); border-radius: 13px; padding: 10px 12px; margin: 8px 0; }
-  .comm-rank-title { font-size: 12px; font-weight: 900; color: var(--mountain); margin-bottom: 7px; }
-  .comm-rank-item { display: flex; align-items: center; gap: 7px; font-size: 11.5px; padding: 4px 0; cursor: pointer; }
-  .comm-rank-item:hover b { color: var(--chili); }
-  .comm-rank-item .rk { width: 17px; height: 17px; border-radius: 50%; background: rgba(31,79,58,0.12); color: var(--mountain); font-size: 10px; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .comm-rank-item:nth-child(2) .rk { background: #e8a33d; color: #fff; }
-  .comm-rank-item b { flex: 1; font-weight: bold; color: var(--ink-deep); }
-  .comm-empty { text-align: center; padding: 30px 10px; color: var(--ink-deep); opacity: 0.5; font-size: 11.5px; line-height: 2; }
-  .comm-empty div { font-size: 30px; }
   .comm-lightbox { position: fixed; inset: 0; background: rgba(10,20,15,0.9); z-index: 9999; display: flex; align-items: center; justify-content: center; cursor: zoom-out; animation: nwFade 0.2s ease; }
   .comm-lightbox img { max-width: 92vw; max-height: 88vh; border-radius: 10px; box-shadow: 0 10px 50px rgba(0,0,0,0.6); }
-  .comm-chat { background: rgba(255,255,255,0.8); border: 1px solid rgba(31,79,58,0.15); border-radius: 14px; margin: 8px 0; overflow: hidden; }
-  .comm-chat-head { display: flex; align-items: center; justify-content: space-between; padding: 9px 12px; cursor: pointer; user-select: none; font-size: 12.5px; font-weight: 900; color: var(--mountain); }
-  .comm-chat-head .comm-live { font-size: 9.5px; color: #2d7a56; background: rgba(45,122,86,0.12); padding: 2px 8px; border-radius: 9px; font-weight: bold; }
-  .comm-chat-head .comm-chat-toggle { font-size: 10px; opacity: 0.6; transition: transform 0.3s; }
-  .comm-chat-head .comm-chat-toggle.collapsed { transform: rotate(-90deg); }
-  .comm-chat-body { max-height: 340px; overflow: hidden; transition: max-height 0.35s ease; }
-  .comm-chat-body.collapsed { max-height: 0; }
-  .comm-chat-list { max-height: 280px; overflow-y: auto; padding: 4px 11px 8px; display: flex; flex-direction: column; gap: 7px; }
-  .comm-msg { display: flex; gap: 7px; align-items: flex-start; }
-  .comm-msg.mine { flex-direction: row-reverse; }
-  .comm-msg .comm-avatar { width: 24px; height: 24px; font-size: 14px; }
-  .comm-msg-bubble { background: rgba(31,79,58,0.07); border-radius: 10px; padding: 6px 10px; max-width: 78%; font-size: 11.5px; line-height: 1.65; color: var(--ink-deep); word-break: break-word; }
-  .comm-msg.mine .comm-msg-bubble { background: rgba(45,122,86,0.85); color: #fff; }
-  .comm-msg-name { font-size: 9.5px; opacity: 0.5; margin-bottom: 2px; }
-  .comm-msg.mine .comm-msg-name { text-align: right; }
-  .comm-chat-input { display: flex; gap: 6px; padding: 8px 11px 10px; border-top: 1px dashed rgba(31,79,58,0.15); }
-  .comm-chat-input input { flex: 1; border: 1px solid rgba(31,79,58,0.25); border-radius: 9px; padding: 7px 10px; font-size: 12px; outline: none; background: rgba(255,255,255,0.9); }
-  .comm-chat-input button { border: none; background: linear-gradient(135deg, #1f4f3a, #2d7a56); color: #fff; border-radius: 9px; padding: 7px 14px; font-size: 12px; font-weight: bold; cursor: pointer; }
-  .comm-cloud-badge { font-size: 10px; text-align: center; padding: 4px; border-radius: 8px; margin: 6px 0; }
-  .comm-cloud-badge.ok { background: rgba(45,122,86,0.1); color: #2d7a56; }
-  .comm-cloud-badge.off { background: rgba(197,74,44,0.08); color: var(--chili); }
-  .comm-anns { margin: 6px 0; display: flex; flex-direction: column; gap: 4px; }
-  .comm-ann-item { display: flex; align-items: flex-start; gap: 6px; background: rgba(255,255,255,0.85); border: 1px solid rgba(31,79,58,0.15); border-radius: 10px; padding: 7px 10px; }
-  .comm-ann-item .comm-ann-icon { font-size: 16px; flex-shrink: 0; }
-  .comm-ann-item b { font-size: 12px; color: var(--ink-deep); display: block; margin-bottom: 2px; }
-  .comm-ann-item span { font-size: 11px; color: #666; line-height: 1.4; display: block; }
-  .comm-ban-bar { background: rgba(197,74,44,0.12); border: 1px solid rgba(197,74,44,0.3); border-radius: 10px; padding: 8px 12px; font-size: 12px; color: var(--chili); text-align: center; margin: 6px 0; font-weight: 600; }
-  .comm-post-del { margin-left: auto; font-size: 11px; color: var(--chili); cursor: pointer; opacity: 0.65; padding: 2px 7px; border-radius: 6px; }
-  .comm-post-del:hover { opacity: 1; background: rgba(197,74,44,0.12); }
-  .comm-act.danger { color: var(--chili); }
-  .comm-act.danger:hover { opacity: 1; }
-  .comm-comment { display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; font-size: 11px; line-height: 1.6; margin-bottom: 6px; }
-  .comm-comment b { color: var(--mountain); }
-  .comm-comment .comm-time { opacity: 0.45; font-size: 9.5px; }
-  .comm-comment-text { flex: 1; min-width: 60px; }
-  .comm-comment-acts { margin-left: auto; display: flex; gap: 8px; align-items: center; }
-  .comm-act-sm { font-size: 11px; color: var(--mountain); cursor: pointer; opacity: 0.6; }
-  .comm-act-sm:hover { opacity: 1; }
-  .comm-act-sm.danger { color: var(--chili); }
-  .comm-reply-hint { font-size: 11px; color: var(--mountain); background: rgba(31,79,58,0.1); padding: 4px 8px; border-radius: 6px; margin-top: 5px; }
-  .comm-chat-reply { font-size: 11px; color: var(--mountain); background: rgba(31,79,58,0.12); padding: 2px 8px; border-radius: 10px; margin-left: 6px; }
-  .comm-msg-bubble { display: flex; flex-direction: column; }
-  .comm-msg-text { font-size: 12px; line-height: 1.55; word-break: break-word; margin-top: 1px; }
-  .comm-msg-actions { display: flex; gap: 12px; margin-top: 4px; }
-  .comm-msg-act { font-size: 10.5px; color: var(--mountain); cursor: pointer; opacity: 0.6; }
-  .comm-msg-act:hover { opacity: 1; }
-  .comm-msg-act.danger { color: var(--chili); }
 
 /* ============================================================
    galaxy 灵感增强（Uiverse.io 开源组件改编 · 重着色为黔行自然调）
@@ -713,9 +598,6 @@
 @media (max-width: 768px) { .qx-toast-wrap { top: 70px; right: 12px; left: 12px; } .qx-toast { max-width: none; } }
 
 /* —— 按钮扫光（galaxy 风格光泽，套用到主行动按钮） —— */
-.navi-btn, .sd-btn.add, .smart-btn, .add-route-btn, #saveClickBtn, .nd-open-btn, .news-mini-btn, .comm-submit { position: relative; overflow: hidden; }
-.navi-btn::after, .sd-btn.add::after, .smart-btn::after, .add-route-btn::after, #saveClickBtn::after, .nd-open-btn::after, .news-mini-btn::after, .comm-submit::after { content: ''; position: absolute; top: 0; left: -120%; width: 80%; height: 100%; background: linear-gradient(105deg, transparent, rgba(255,255,255,0.4), transparent); transform: skewX(-18deg); transition: left 0.6s ease; pointer-events: none; }
-.navi-btn:hover::after, .sd-btn.add:hover::after, .smart-btn:hover::after, .add-route-btn:hover::after, #saveClickBtn:hover::after, .nd-open-btn:hover::after, .news-mini-btn:hover::after, .comm-submit:hover::after { left: 130%; }
 
 /* ===== 移动端适配：前后台手机端重设计 ===== */
 @media (max-width: 768px) {
@@ -744,7 +626,7 @@
   /* 定位按钮 */
   .locate-btn { bottom: 25px; left: 12px; width: 44px; height: 44px; }
 
-  /* 文旅资讯/旅友社区浮窗：默认收起，展开时底部抽屉 */
+  /* 文旅资讯浮窗：默认收起，展开时底部抽屉 */
   .comm-float { left: 0; right: 0; top: auto; bottom: 0; width: 100%; max-width: 100%; max-height: 55vh; border-radius: 18px 18px 0 0; border-bottom: none; box-shadow: 0 -8px 30px rgba(0,0,0,0.18); }
   .comm-float-head { border-radius: 18px 18px 0 0; padding: 12px 14px; }
   .cf-tab { font-size: 14px; padding: 7px 13px; }
@@ -1487,15 +1369,50 @@ function restoreCommFloat() {
   if (m) m.style.display = 'none';
 }
 
-/* ===== 渲染滚动公告 ===== */
+/* ===== 渲染滚动公告 =====
+   数据源优先级（保证「后台发什么、前台显示什么」两端一致）：
+   1) Supabase 实时公告（后台「内容管理 → 公告」发布，开关即时生效）
+   2) 后台数据（同源 localStorage qianxing-admin / 云端 CLOUD_ADMIN 的 announcements）
+   3) 「导入同步码」带来的公告（localStorage qianxing-admin-sync）
+   4) 系统内置默认文案（仅在以上全空时兜底） */
+function collectAnnouncements() {
+  const pick = (arr) => (Array.isArray(arr) ? arr : [])
+    .filter(a => a && a.content)
+    .filter(a => !String(a.type || '').startsWith('off:'))   // 后台「隐藏」用 off: 前缀
+    .filter(a => a.status !== 'draft')                        // 未发布的草稿不展示
+    .map(a => String(a.content).trim())
+    .filter(Boolean);
+
+  const live = pick(commState.announcements);
+  if (live.length) return live;
+
+  try {
+    const admin = loadAdminState();
+    const fromAdmin = pick(admin && admin.state ? admin.state.announcements : null);
+    if (fromAdmin.length) return fromAdmin;
+  } catch (e) {}
+
+  try {
+    const raw = localStorage.getItem('qianxing-admin-sync');
+    if (raw) {
+      const sync = JSON.parse(raw);
+      const fromSync = pick(sync && sync.announcements);
+      if (fromSync.length) return fromSync;
+    }
+  } catch (e) {}
+
+  return [];
+}
+
 function renderTicker() {
-  /* 优先实时读取 Supabase 社区公告（后台开关即时生效），无数据时回退默认文案 */
-  const live = (commState.announcements || []).filter(a => !String(a.type||'').startsWith('off:') && a.content);
-  let items = live.length ? live.map(a => a.content) : [
-    '抖音热榜：峰林布依景区夜景爆火，被誉为贵州版千与千寻',
-    '防坑预警：西江苗寨现拉客现象，请认准官方售票处',
-    '提示：支持模糊搜索，如"好吃的"、"瀑布"、"夜景"',
-  ];
+  let items = collectAnnouncements();
+  if (!items.length) {
+    items = [
+      '抖音热榜：峰林布依景区夜景爆火，被誉为贵州版千与千寻',
+      '防坑预警：西江苗寨现拉客现象，请认准官方售票处',
+      '提示：支持模糊搜索，如"好吃的"、"瀑布"、"夜景"',
+    ];
+  }
   const ticker = document.getElementById('tickerContainer');
   if (!ticker) return;
   if (items.length === 0) items = ['📋 当前无滚动公告，管理员可在后台发布'];
@@ -1786,51 +1703,17 @@ function forecastHtml(weather) {
   }).join('');
 }
 
-/* ===== 旅友社区（云端版：Supabase 数据库，跨设备互通） ===== */
+/* ===== 公告 / 文旅资讯（云端版：Supabase 数据库）
+   —— 原「旅友社区」UGC 已移除（发帖 / 评论 / 聊天 / 点赞 / 评分排行 / 图片上传）。
+      原因：后台「社区管理」只保留「用户管理 + 社区公告」，
+      前台若继续提供发帖评论，会出现"游客能发内容、后台无人能管"的两端不一致。
+   本模块对外仅暴露：COMM_CLOUD / commState.announcements / commEsc /
+   commLightbox / commRefresh / commEnsurePolling */
 const COMM_CLOUD = { url: 'https://isauemozgewpzrowsvgj.supabase.co', key: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlzYXVlbW96Z2V3cHpyb3dzdmdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3OTg3MTUsImV4cCI6MjEwMjM3NDcxNX0.Der6KjH0D_Yki2gZnvq-gouhMCBvI_aCmthLcm1tGA8' };
 const COMM_CLOUD_READY = !COMM_CLOUD.url.startsWith('__');
-const COMM_SALT = 'qx_comm_2026';
-const COMM_AVATARS = ['🧑‍🎒','👩‍🌾','🧗','📸','🍜','🚵','🍵','🐘','🌄','🎒','🏔️','🦋','🐒','🌺','🎋','🍶'];
-const COMM_SESSION_KEY = 'qianxing-comm-session';
-const COMM_CACHE_KEY = 'qianxing-comm-cache';
-const commState = { session: null, posts: [], comments: {}, messages: [], draft: { rating: 0, photos: [] }, authTab: 'login', chatOpen: true, cloudOk: null, expandedComments: {}, pollTimer: null, banned: false, muted: false, announcements: [], regionFilter: '', replyTo: null, chatReplyTo: null, uiBuilt: false, lastSessionKey: null, commentDrafts: {} };
+const commState = { announcements: [], cloudOk: null, pollTimer: null };
 
 function commEsc(s){ const d=document.createElement('div'); d.textContent = s==null?'':String(s); return d.innerHTML; }
-
-/* 用户状态（与后台一致：qx_users.avatar 兼做状态载体，旧 emoji 视为 active） */
-function commModOf(avatar){
-  try { if (typeof avatar === 'string' && avatar.trim().startsWith('{')) { const o = JSON.parse(avatar); if (o && o.mod) return { st: o.mod.st || 'active', dr: o.mod.dr || null, cb: !!o.mod.cb }; } } catch(e){}
-  return { st: 'active', dr: null, cb: false };
-}
-function commAvatarOf(avatar){
-  if (typeof avatar === 'string' && avatar.trim().startsWith('{')) { try { const o = JSON.parse(avatar); if (o && o.e) return o.e; } catch(e){} }
-  return (typeof avatar === 'string' && avatar) ? avatar : '🎒';
-}
-/* 正在输入社区输入框（评论/聊天/发布）时，轮询不要重建导致光标丢失/内容消失 */
-function commIsTyping(){
-  const a = document.activeElement;
-  if (!a || !a.id) return false;
-  if (a.id === 'commChatInput' || a.id === 'commText') return true;
-  if (a.id.indexOf('commCommentInput_') === 0) return true;
-  return false;
-}
-function commTimeAgo(ts){
-  const diff = (Date.now() - new Date(ts).getTime())/1000;
-  if (diff < 60) return '刚刚';
-  if (diff < 3600) return Math.floor(diff/60)+'分钟前';
-  if (diff < 86400) return Math.floor(diff/3600)+'小时前';
-  if (diff < 86400*30) return Math.floor(diff/86400)+'天前';
-  return new Date(ts).toLocaleDateString('zh-CN');
-}
-function commStars(n){ return '★★★★★'.slice(0,n) + '☆☆☆☆☆'.slice(0,5-n); }
-async function commSha256(s){
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
-  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
-}
-function commLoadSession(){ try { return JSON.parse(localStorage.getItem(COMM_SESSION_KEY)); } catch(e){ return null; } }
-function commSaveSession(u){ u ? localStorage.setItem(COMM_SESSION_KEY, JSON.stringify(u)) : localStorage.removeItem(COMM_SESSION_KEY); }
-function commLoadCache(){ try { return JSON.parse(localStorage.getItem(COMM_CACHE_KEY)); } catch(e){ return null; } }
-function commSaveCache(){ try { localStorage.setItem(COMM_CACHE_KEY, JSON.stringify({ posts: commState.posts, comments: commState.comments, messages: commState.messages, announcements: commState.announcements, t: Date.now() })); } catch(e){} }
 
 /* --- Supabase REST 封装 --- */
 async function sbFetch(path, opts = {}) {
@@ -1841,476 +1724,34 @@ async function sbFetch(path, opts = {}) {
   return res.json();
 }
 
-/* --- 图片：本地压缩 → 上传云存储 --- */
-function commCompressImage(file, maxW = 900, quality = 0.72) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = e => {
-      const img = new Image();
-      img.onload = () => {
-        const scale = Math.min(1, maxW / img.width);
-        const cv = document.createElement('canvas');
-        cv.width = Math.round(img.width * scale); cv.height = Math.round(img.height * scale);
-        cv.getContext('2d').drawImage(img, 0, 0, cv.width, cv.height);
-        resolve({ dataUrl: cv.toDataURL('image/jpeg', quality), blob: null });
-      };
-      img.onerror = () => reject(new Error('图片读取失败'));
-      img.src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
-}
-async function commUploadImage(dataUrl, username, idx) {
-  const blob = await (await fetch(dataUrl)).blob();
-  const path = 'comm/' + username.replace(/[^a-zA-Z0-9_]/g,'') + '_' + Date.now() + '_' + idx + '.jpg';
-  await sbFetch('/storage/v1/object/community/' + path, { method: 'POST', headers: { 'Content-Type': 'image/jpeg', 'x-upsert': 'true' }, body: blob });
-  return COMM_CLOUD.url + '/storage/v1/object/public/community/' + path;
-}
-
-/* --- 注册 / 登录 --- */
-async function commAuth() {
-  const errEl = document.getElementById('commAuthErr'); if (errEl) errEl.textContent = '';
-  const username = (document.getElementById('commAuthUser').value || '').trim();
-  const password = document.getElementById('commAuthPass').value || '';
-  if (!/^[a-zA-Z0-9_\u4e00-\u9fa5]{2,16}$/.test(username)) { if (errEl) errEl.textContent = '用户名需2-16位（中英文/数字/下划线）'; return; }
-  if (password.length < 6) { if (errEl) errEl.textContent = '密码至少6位'; return; }
-  const btn = document.getElementById('commAuthBtn'); if (btn) btn.disabled = true;
-  try {
-    const hash = await commSha256(COMM_SALT + username + ':' + password);
-    if (commState.authTab === 'register') {
-      const exist = await sbFetch('/rest/v1/qx_users?username=eq.' + encodeURIComponent(username) + '&select=id');
-      if (exist && exist.length > 0) { if (errEl) errEl.textContent = '该用户名已被注册'; return; }
-      const avatar = COMM_AVATARS[Math.floor(Math.random()*COMM_AVATARS.length)];
-      await sbFetch('/rest/v1/qx_users', { method: 'POST', headers: { 'Prefer': 'return=representation' }, body: JSON.stringify({ username, pass_hash: hash, avatar }) });
-      commState.session = { username, avatar }; commSaveSession(commState.session);
-    } else {
-      const found = await sbFetch('/rest/v1/qx_users?username=eq.' + encodeURIComponent(username) + '&pass_hash=eq.' + hash + '&select=id,username,avatar,banned');
-      if (!found || found.length === 0) { if (errEl) errEl.textContent = '用户名或密码错误'; return; }
-      if (found[0].banned) { if (errEl) errEl.textContent = '该账号已被管理员封禁（关小黑屋），请联系客服解封'; return; }
-      commState.session = { username: found[0].username, avatar: found[0].avatar || '🎒' }; commState.banned = false; commSaveSession(commState.session);
-    }
-    renderCommunity(); commRefresh();
-  } catch (e) { if (errEl) errEl.textContent = '云端连接失败，请检查网络后重试'; }
-  finally { if (btn) btn.disabled = false; }
-}
-function commLogout(){ commState.session = null; commState.banned = false; commSaveSession(null); renderCommunity(); }
-function commCheckBan(){
-  if (!commState.session) return false;
-  if (commState.banned) { alert('⛔ 你已被管理员封禁（关小黑屋），无法发布内容\n如有疑问请联系客服解封'); return true; }
-  return false;
-}
-
-/* --- 发布帖子 --- */
-async function commPublish() {
-  if (!commState.session) return;
-  if (commCheckBan()) return;
-  const spotSel = document.getElementById('commSpotSelect');
-  const textEl = document.getElementById('commText');
-  const text = (textEl.value || '').trim();
-  const rating = commState.draft.rating;
-  if (!rating) { alert('请先打个星级评分 ⭐'); return; }
-  if (!text) { alert('写点游玩心得吧～'); return; }
-  const btn = document.getElementById('commPublishBtn'); if (btn) { btn.disabled = true; btn.textContent = '☁️ 发布中...'; }
-  try {
-    let images = [];
-    for (let i = 0; i < commState.draft.photos.length; i++) {
-      images.push(await commUploadImage(commState.draft.photos[i], commState.session.username, i));
-    }
-    const spotId = spotSel ? Number(spotSel.value) : 0;
-    const spotName = spotSel ? spotSel.options[spotSel.selectedIndex].getAttribute('data-name') || '' : '';
-    const r = await sbFetch('/rest/v1/qx_posts', { method: 'POST', headers: { 'Prefer': 'return=representation' }, body: JSON.stringify({ username: commState.session.username, avatar: commState.session.avatar, spot_id: spotId, spot_name: spotName, rating, content: text, images: JSON.stringify(images), likes: JSON.stringify([]) }) });
-    const newPost = (Array.isArray(r) && r[0]) ? r[0] : { username: commState.session.username, avatar: commState.session.avatar, spot_id: spotId, spot_name: spotName, rating, content: text, images: JSON.stringify(images), likes: JSON.stringify([]), created_at: new Date().toISOString() };
-    commState.posts.unshift(newPost);
-    commRenderFeed();  /* 仅把新帖插入动态列表，不重建整个社区（保留聊天输入框焦点） */
-    commState.draft = { rating: 0, photos: [] };
-    if (textEl) textEl.value = '';
-    document.querySelectorAll('#commStarsPick span').forEach(s=>s.classList.remove('on'));
-    commRenderPhotos();
-  } catch (e) { alert('发布失败：' + e.message); }
-  finally { if (btn) { btn.disabled = false; btn.textContent = '🚀 发布分享'; } }
-}
-function commPickRating(n){ commState.draft.rating = n; document.querySelectorAll('#commStarsPick span').forEach((s,i)=>s.classList.toggle('on', i<n)); }
-function commAddPhotos(input){
-  const files = [...input.files].slice(0, 3 - commState.draft.photos.length);
-  if (files.length === 0) return;
-  (async () => {
-    for (const f of files) { if (f.size > 15*1024*1024) { alert('单张图片请小于15MB'); continue; } try { const { dataUrl } = await commCompressImage(f); commState.draft.photos.push(dataUrl); } catch(e){} }
-    commRenderPhotos();
-  })();
-  input.value = '';
-}
-function commRemovePhoto(i){ commState.draft.photos.splice(i,1); commRenderPhotos(); }
-function commRenderPhotos(){
-  const el = document.getElementById('commPhotoRow'); if (!el) return;
-  el.innerHTML = commState.draft.photos.map((p,i)=>`<div class="comm-photo-item"><img src="${p}"><div class="comm-photo-del" onclick="commRemovePhoto(${i})">✕</div></div>`).join('') +
-    (commState.draft.photos.length < 3 ? `<div class="comm-add-photo" onclick="document.getElementById('commPhotoInput').click()">📷<i>添加照片</i></div>` : '');
-}
-
-/* --- 点赞 / 评论 --- */
-async function commToggleLike(postId){
-  if (!commState.session) { alert('请先登录后再点赞'); return; }
-  if (commCheckBan()) return;
-  const post = commState.posts.find(p=>p.id===postId); if (!post) return;
-  let likes = commParseArr(post.likes);
-  const me = commState.session.username;
-  likes = likes.includes(me) ? likes.filter(u=>u!==me) : [...likes, me];
-  post.likes = JSON.stringify(likes);
-  commRenderFeed();  /* 仅局部刷新动态列表，不重建整个社区（避免聊天输入框失焦） */
-  try { await sbFetch('/rest/v1/qx_posts?id=eq.' + postId, { method: 'PATCH', body: JSON.stringify({ likes: JSON.stringify(likes) }) }); } catch(e){}
-}
-function commParseArr(v){ if (Array.isArray(v)) return v; if (typeof v === 'string') { try { const a = JSON.parse(v); return Array.isArray(a)?a:[]; } catch(e){ return []; } } return []; }
-function commToggleComments(postId){
-  commState.expandedComments[postId] = !commState.expandedComments[postId];
-  const box = document.getElementById('commComments_' + postId);
-  if (box) {
-    box.style.display = commState.expandedComments[postId] ? 'block' : 'none';
-    if (commState.expandedComments[postId]) commRenderComments(postId);
-  }
-}
-async function commAddComment(postId){
-  if (!commState.session) { alert('请先登录后再评论'); return; }
-  if (commCheckBan()) return;
-  const input = document.getElementById('commCommentInput_' + postId);
-  let text = (input.value||'').trim(); if (!text) return;
-  if (commState.replyTo && commState.replyTo.postId === postId) {
-    text = '@' + commState.replyTo.username + ' ' + text;
-    commState.replyTo = null;
-  }
-  input.value = '';
-  const hint = document.getElementById('commReplyHint_' + postId);
-  if (hint) hint.style.display = 'none';
-  try {
-    const r = await sbFetch('/rest/v1/qx_comments', { method: 'POST', headers: { 'Prefer': 'return=representation' }, body: JSON.stringify({ post_id: postId, username: commState.session.username, avatar: commState.session.avatar, content: text }) });
-    const newC = (Array.isArray(r) && r[0]) ? r[0] : { post_id: postId, username: commState.session.username, avatar: commState.session.avatar, content: text, created_at: new Date().toISOString() };
-    (commState.comments[postId] = commState.comments[postId] || []).push(newC);
-    commState.expandedComments[postId] = true;
-    commRenderComments(postId);  /* 仅刷新该帖评论区，不重建整个社区 */
-  } catch(e){ alert('评论失败：' + e.message); }
-}
-
-/* --- 聊天大厅 --- */
-async function commSendChat(){
-  if (!commState.session) { alert('请先登录后再聊天'); return; }
-  if (commCheckBan()) return;
-  const input = document.getElementById('commChatInput');
-  let text = (input.value||'').trim(); if (!text) return;
-  if (commState.chatReplyTo) { text = '@' + commState.chatReplyTo + ' ' + text; commState.chatReplyTo = null; }
-  input.value = '';
-  const hint = document.getElementById('commChatReplyHint');
-  if (hint) hint.style.display = 'none';
-  try {
-    const r = await sbFetch('/rest/v1/qx_messages', { method: 'POST', headers: { 'Prefer': 'return=representation' }, body: JSON.stringify({ username: commState.session.username, avatar: commState.session.avatar, content: text }) });
-    const newM = (Array.isArray(r) && r[0]) ? r[0] : { username: commState.session.username, avatar: commState.session.avatar, content: text, created_at: new Date().toISOString() };
-    commState.messages.push(newM);
-    commRenderChat(true);  /* 仅刷新聊天列表，不重建整个社区 */
-  } catch(e){ alert('发送失败：' + e.message); }
-}
-function commToggleChat(){
-  commState.chatOpen = !commState.chatOpen;
-  const b = document.querySelector('.comm-chat-body'); if (b) b.classList.toggle('collapsed', !commState.chatOpen);
-  const t = document.querySelector('.comm-chat-toggle'); if (t) t.classList.toggle('collapsed', !commState.chatOpen);
-}
-function commRenderChat(scrollBottom){
-  const list = document.getElementById('commChatList'); if (!list) return;
-  const me = commState.session ? commState.session.username : '';
-  list.innerHTML = commState.messages.slice(-80).map(m => `
-    <div class="comm-msg ${m.username===me?'mine':''}">
-      <div class="comm-avatar">${commEsc(m.avatar||'🎒')}</div>
-      <div class="comm-msg-bubble">
-        <div class="comm-msg-name">${commEsc(m.username)} · ${commTimeAgo(m.created_at)}</div>
-        <div class="comm-msg-text">${commEsc(m.content)}</div>
-        <div class="comm-msg-actions">
-          <span class="comm-msg-act" onclick="commReplyChat('${commEsc(m.username)}')">↩ 回复</span>
-          ${(m.username===me && m.id) ? `<span class="comm-msg-act danger" onclick="commDeleteMessage('${m.id}')">🗑 删除</span>` : ''}
-        </div>
-      </div>
-    </div>`).join('') || '<div class="comm-empty" style="padding:14px;">还没有人说话，来打个招呼吧 👋</div>';
-  if (scrollBottom) list.scrollTop = list.scrollHeight;
-}
-
-/* --- 数据拉取 + 轮询 --- */
-async function commRefresh(){
-  if (!COMM_CLOUD_READY || document.hidden) return;
-  try {
-    /* 拉取社区公告（后台开关实时生效），驱动滚动公告条与文旅资讯 */
-    try { const anns = await sbFetch('/rest/v1/qx_comm_announcements?order=created_at.desc&limit=50&select=*'); commState.announcements = (anns || []).filter(a => a.type !== 'sys:admin_sync'); } catch(e){}
-    try { renderTicker(); } catch(e){}
-    commState.cloudOk = true;
-  } catch (e) {
-    commState.cloudOk = false;
-  }
-}
-async function commPoll(){
-  if (!COMM_CLOUD_READY || document.hidden) return;
-  await commRefresh();
-}
-function commEnsurePolling(){
-  if (commState.pollTimer) return;
-  commState.pollTimer = setInterval(commPoll, 6000);
-}
-
-/* --- 渲染 --- */
-function commSpotOptions(){
-  const spots = Object.values(markers).map(m=>m.spot);
-  return '<option value="0" data-name="">🌍 游玩综合分享（不选景点）</option>' +
-    spots.map(s=>`<option value="${s.id}" data-name="${commEsc(s.name)}">${commEsc(s.name)}（${commEsc(s.city||'')}）</option>`).join('');
-}
-function commRankHtml(){
-  const agg = {};
-  commState.posts.forEach(p => { if (p.spot_name && p.rating > 0) { agg[p.spot_name] = agg[p.spot_name] || { sum:0, n:0, id:p.spot_id }; agg[p.spot_name].sum += p.rating; agg[p.spot_name].n++; } });
-  const list = Object.entries(agg).map(([name,v])=>({ name, avg: v.sum/v.n, n: v.n, id: v.id })).filter(x=>x.n>=1).sort((a,b)=>b.avg-a.avg || b.n-a.n).slice(0,5);
-  if (!list.length) return '';
-  return `<div class="comm-rank"><div class="comm-rank-title">🏆 社区评分榜</div>` + list.map((x,i)=>`
-    <div class="comm-rank-item" onclick="flyToSpot(${x.id})">
-      <span class="rk">${i+1}</span><b>${commEsc(x.name)}</b>
-      <span style="color:#e8a33d;font-weight:900;">${x.avg.toFixed(1)}</span>
-      <span style="opacity:0.45;font-size:10px;">${x.n}条</span>
-    </div>`).join('') + '</div>';
-}
-function commFeedHtml(){
-  const me = commState.session ? commState.session.username : '';
-  const region = commState.regionFilter || '';
-  const regions = Array.from(new Set(spotsData.map(s=>s.city).filter(Boolean))).sort();
-  const regionBar = `<div class="comm-region-bar"><span class="cr-chip ${!region?'active':''}" onclick="commSetRegionFilter('')">🌍 全部</span>` + regions.map(r=>`<span class="cr-chip ${region===r?'active':''}" onclick="commSetRegionFilter('${commEsc(r)}')">${commEsc(r)}</span>`).join('') + `</div>`;
-  let posts = commState.posts;
-  if (region) posts = posts.filter(p => { const sp = spotsData.find(s=>s.id===p.spot_id); return sp && sp.city && (sp.city===region || sp.city.includes(region) || region.includes(sp.city)); });
-  if (!posts.length) return regionBar + `<div class="comm-empty"><div>🏕️</div>${region?'该地区暂无旅友分享':'还没有旅友分享'}<br>来发第一篇游玩帖吧！</div>`;
-  return regionBar + posts.map(p => {
-    const likes = commParseArr(p.likes);
-    const liked = commState.session && likes.includes(commState.session.username);
-    const cs = commState.comments[p.id] || [];
-    const expanded = commState.expandedComments[p.id];
-    return `<div class="comm-post" id="commPost_${p.id}">
-      <div class="comm-post-head">
-        <div class="comm-avatar">${commEsc(p.avatar||'🎒')}</div>
-        <div class="comm-post-user"><b>${commEsc(p.username)}</b><span class="comm-time">${commTimeAgo(p.created_at)}</span></div>
-        ${p.username===me ? `<span class="comm-post-del" onclick="commDeletePost(${p.id})">🗑 删除</span>` : ''}
-      </div>
-      ${p.spot_name ? `<div class="comm-post-spot" onclick="flyToSpot(${p.spot_id||0})">📍 ${commEsc(p.spot_name)} · 看地图 →</div>` : ''}
-      <div class="comm-post-stars">${commStars(p.rating||5)}<span class="comm-score">${(p.rating||5).toFixed(1)}分</span></div>
-      <div class="comm-post-text">${commEsc(p.content)}</div>
-      ${commParseArr(p.images).length ? `<div class="comm-post-imgs">${commParseArr(p.images).map(src=>`<img src="${commEsc(src)}" loading="lazy" onclick="commLightbox('${src}')">`).join('')}</div>` : ''}
-      <div class="comm-post-actions">
-        <span class="comm-act ${liked?'liked':''}" onclick="commToggleLike(${p.id})">${liked?'❤️':'🤍'} ${likes.length}</span>
-        <span class="comm-act" onclick="commToggleComments(${p.id})">💬 评论 ${cs.length}</span>
-        ${p.username===me ? `<span class="comm-act danger" onclick="commDeletePost(${p.id})">🗑 删除</span>` : ''}
-      </div>
-      <div class="comm-comments" id="commComments_${p.id}" style="${expanded?'':'display:none;'}">
-        ${cs.map(c=>`<div class="comm-comment"><b>${commEsc(c.username)}</b><span class="comm-comment-text">${commEsc(c.content)}</span><span class="comm-time">${commTimeAgo(c.created_at)}</span><span class="comm-comment-acts">${(c.username===me&&c.id)?`<span class="comm-act-sm danger" onclick="commDeleteComment('${c.id}',${p.id})">🗑</span>`:''}<span class="comm-act-sm" onclick="commSetReply(${p.id},'${commEsc(c.username)}')">↩ 回复</span></span></div>`).join('')}
-        <div class="comm-comment-input">
-          <input id="commCommentInput_${p.id}" placeholder="${commState.session?(commState.replyTo&&commState.replyTo.postId===p.id?('回复 @'+commState.replyTo.username):'说点什么...'):'登录后可评论'}" ${commState.session?'':'disabled'} onkeydown="if(event.key==='Enter')commAddComment(${p.id})">
-          <button onclick="commAddComment(${p.id})">发送</button>
-        </div>
-        <div class="comm-reply-hint" id="commReplyHint_${p.id}" style="display:none;"></div>
-      </div>
-    </div>`;
-  }).join('');
-}
-function commSetRegionFilter(r){ commState.regionFilter = r; commRenderFeed(); }
+/* --- 图片灯箱（文旅资讯配图点击放大） --- */
 function commLightbox(src){
   const ov = document.createElement('div');
   ov.className = 'comm-lightbox'; ov.onclick = ()=>ov.remove();
   ov.innerHTML = `<img src="${commEsc(src)}">`;
   document.body.appendChild(ov);
 }
-function commAnnouncementsHtml(){
-  const list = (commState.announcements || []).filter(a => !String(a.type||'').startsWith('off:'));
-  if (list.length === 0) return '';
-  const typeMap = { hot: '🔥', warning: '⚠️', info: '💡', notice: '📢' };
-  return '<div class="comm-anns">' + list.map(a => `
-    <div class="comm-ann-item">
-      <span class="comm-ann-icon">${typeMap[a.type] || '📢'}</span>
-      <div><b>${commEsc(a.title)}</b><span>${commEsc(a.content)}</span></div>
-    </div>`).join('') + '</div>';
-}
-function commBanBarHtml(){
-  if (!commState.banned) return '';
-  return '<div class="comm-ban-bar">⛔ 你的账号已被管理员封禁，无法发帖/评论/聊天。如有疑问请联系客服。</div>';
-}
-/* 社区骨架：仅在登录态变化 / 首次 / 强制时整体重建；日常更新只刷新子容器，绝不重建输入框 */
-function buildCommunityShell(){
-  const cloudBadge = commState.cloudOk === false
-    ? `<div class="comm-cloud-badge off">⚠️ 云端连接失败，正在显示缓存内容（请检查网络）</div>`
-    : `<div class="comm-cloud-badge ok">☁️ 云端社区已连接 · 全国旅友实时互通</div>`;
-  if (!commState.session) {
-    return `<div class="comm-wrap">${cloudBadge}
-      <div class="comm-auth-card">
-        <div class="comm-auth-title">贵州文旅新闻速递</div>
-        <div class="comm-auth-sub">注册账号，分享你的贵州游记照片<br>点评景点星级，和全国旅友畅聊</div>
-        <div class="comm-auth-tabs">
-          <div class="comm-auth-tab ${commState.authTab==='login'?'active':''}" onclick="commState.authTab='login';renderCommunity(true)">登 录</div>
-          <div class="comm-auth-tab ${commState.authTab==='register'?'active':''}" onclick="commState.authTab='register';renderCommunity(true)">注 册</div>
-        </div>
-        <div class="comm-field"><input id="commAuthUser" placeholder="用户名（2-16位）" maxlength="16"></div>
-        <div class="comm-field"><input id="commAuthPass" type="password" placeholder="密码（至少6位）" onkeydown="if(event.key==='Enter')commAuth()"></div>
-        <button class="comm-submit" id="commAuthBtn" onclick="commAuth()">${commState.authTab==='register'?'注册并加入':'登录社区'}</button>
-        <div class="comm-err" id="commAuthErr"></div>
-      </div>
-      <div class="comm-feed-title">🌏 网友动态 <span class="comm-count">${commState.posts.length}条 · 游客可浏览</span></div>
-      ${commAnnouncementsHtml()}
-      <div id="commFeed"></div>
-    </div>`;
-  }
-  return `<div class="comm-wrap">${cloudBadge}
-    ${commBanBarHtml()}
-    <div class="comm-user-bar">
-      <div class="comm-avatar">${commEsc(commState.session.avatar)}</div>
-      <div><b style="font-size:13px;color:var(--ink-deep);">${commEsc(commState.session.username)}</b><div style="font-size:10px;opacity:0.5;">已登录 · 云端同步中</div></div>
-      <span class="comm-logout" onclick="commLogout()">退出</span>
-    </div>
-    ${commAnnouncementsHtml()}
-    <div class="comm-chat">
-      <div class="comm-chat-head" onclick="commToggleChat()">
-        <span>💬 旅友聊天大厅</span>
-        <span><span class="comm-live">● 实时</span> <span class="comm-chat-toggle ${commState.chatOpen?'':'collapsed'}">▾</span></span>
-      </div>
-      <div class="comm-chat-body ${commState.chatOpen?'':'collapsed'}">
-        <div class="comm-chat-list" id="commChatList"></div>
-        <div class="comm-chat-input">
-          <input id="commChatInput" placeholder="和全国旅友聊聊贵州..." maxlength="200" onkeydown="if(event.key==='Enter')commSendChat()">
-          <button onclick="commSendChat()">发送</button>
-          <span class="comm-chat-reply" id="commChatReplyHint" style="display:none;"></span>
-        </div>
-      </div>
-    </div>
-    <div class="comm-composer">
-      <select id="commSpotSelect">${commSpotOptions()}</select>
-      <div class="comm-stars-pick" id="commStarsPick">${[1,2,3,4,5].map(i=>`<span onclick="commPickRating(${i})">★</span>`).join('')}<span style="font-size:10px;color:var(--ink-deep);opacity:0.5;margin-left:6px;align-self:center;">点星评分</span></div>
-      <textarea id="commText" placeholder="分享你在这里的游玩经历、避坑心得..." maxlength="500"></textarea>
-      <div class="comm-photo-row" id="commPhotoRow"></div>
-      <input type="file" id="commPhotoInput" accept="image/*" multiple style="display:none" onchange="commAddPhotos(this)">
-      <button class="comm-submit" id="commPublishBtn" onclick="commPublish()">🚀 发布分享</button>
-    </div>
-    ${commRankHtml()}
-    <div class="comm-feed-title">🌏 网友动态 <span class="comm-count">共${commState.posts.length}条</span></div>
-    <div id="commFeed"></div>
-  </div>`;
-}
-/* 暂存所有评论输入框的草稿，避免重建后内容消失 */
-function commSaveCommentDrafts(){
-  document.querySelectorAll('[id^="commCommentInput_"]').forEach(inp => {
-    const pid = String(inp.id).replace('commCommentInput_','');
-    commState.commentDrafts[pid] = inp.value;
-  });
-}
-function commRenderFeed(){
-  const el = document.getElementById('commFeed'); if (!el) return;
-  /* 1) 先暂存所有正在输入的评论草稿 */
-  commSaveCommentDrafts();
-  /* 2) 记录当前焦点评论框与光标位置 */
-  const active = document.activeElement;
-  let focusPost = null, caret = 0;
-  if (active && active.id && active.id.indexOf('commCommentInput_') === 0) {
-    focusPost = String(active.id).replace('commCommentInput_','');
-    try { caret = active.selectionStart || 0; } catch(e){ caret = (active.value||'').length; }
-  }
-  /* 3) 记录滚动位置，重建后还原，避免“跳动” */
-  const st = el.scrollTop;
-  el.innerHTML = commFeedHtml();
-  el.scrollTop = st;
-  /* 4) 回填草稿（仅对当前展开的评论框） */
-  Object.keys(commState.commentDrafts).forEach(pid => {
-    const v = commState.commentDrafts[pid]; if (v == null) return;
-    const inp = document.getElementById('commCommentInput_' + pid);
-    if (inp) inp.value = v;
-  });
-  /* 5) 恢复焦点与光标 */
-  if (focusPost) {
-    const inp = document.getElementById('commCommentInput_' + focusPost);
-    if (inp) { inp.focus(); try { inp.setSelectionRange(caret, caret); } catch(e){} }
-  }
-}
-function commRenderComments(postId){
-  const box = document.getElementById('commComments_' + postId); if (!box) return;
-  /* 暂存本帖输入框草稿，避免删除评论等重建时清空正在输入的回复 */
-  const inp = document.getElementById('commCommentInput_' + postId);
-  const draft = inp ? inp.value : (commState.commentDrafts[postId] || '');
-  const wasFocused = !!(inp && document.activeElement === inp);
-  let caret = 0; try { caret = inp ? (inp.selectionStart || 0) : 0; } catch(e){}
-  const cs = commState.comments[postId] || [];
-  const me = commState.session ? commState.session.username : '';
-  const replying = (commState.replyTo && commState.replyTo.postId === postId) ? ('回复 @' + commState.replyTo.username) : '';
-  box.innerHTML = cs.map(c=>`<div class="comm-comment"><b>${commEsc(c.username)}</b><span class="comm-comment-text">${commEsc(c.content)}</span><span class="comm-time">${commTimeAgo(c.created_at)}</span><span class="comm-comment-acts">${(c.username===me&&c.id)?`<span class="comm-act-sm danger" onclick="commDeleteComment('${c.id}',${postId})">🗑</span>`:''}<span class="comm-act-sm" onclick="commSetReply(${postId},'${commEsc(c.username)}')">↩ 回复</span></span></div>`).join('') + `
-    <div class="comm-comment-input">
-      <input id="commCommentInput_${postId}" placeholder="${commState.session?(replying||'说点什么...'):'登录后可评论'}" ${commState.session?'':'disabled'} onkeydown="if(event.key==='Enter')commAddComment(${postId})">
-      <button onclick="commAddComment(${postId})">发送</button>
-    </div>
-    <div class="comm-reply-hint" id="commReplyHint_${postId}" style="display:${replying?'block':'none'};">${replying}</div>`;
-  commState.commentDrafts[postId] = draft;
-  if (draft) { const ni = document.getElementById('commCommentInput_' + postId); if (ni) ni.value = draft; }
-  if (wasFocused) { const ni = document.getElementById('commCommentInput_' + postId); if (ni) { ni.focus(); try { ni.setSelectionRange(caret, caret); } catch(e){} } }
-}
-async function commDeletePost(postId){
-  if (!confirm('确定删除这篇分享？此操作不可恢复。')) return;
+
+/* --- 公告拉取：驱动「滚动公告条」 --- */
+async function commRefresh(){
+  if (!COMM_CLOUD_READY || document.hidden) return;
   try {
-    await sbFetch('/rest/v1/qx_posts?id=eq.' + postId, { method: 'DELETE' });
-    commState.posts = commState.posts.filter(p=>p.id!==postId);
-    commRenderFeed();
-  } catch(e){ alert('删除失败：' + e.message); }
-}
-async function commDeleteComment(commentId, postId){
-  if (!confirm('确定删除这条评论？')) return;
-  try {
-    await sbFetch('/rest/v1/qx_comments?id=eq.' + commentId, { method: 'DELETE' });
-    commState.comments[postId] = (commState.comments[postId]||[]).filter(c=>c.id!==commentId);
-    commRenderComments(postId);
-  } catch(e){ alert('删除失败：' + e.message); }
-}
-async function commDeleteMessage(msgId){
-  if (!confirm('确定删除这条消息？')) return;
-  try {
-    await sbFetch('/rest/v1/qx_messages?id=eq.' + msgId, { method: 'DELETE' });
-    commState.messages = commState.messages.filter(m=>m.id!==msgId);
-    commRenderChat(true);
-  } catch(e){ alert('删除失败：' + e.message); }
-}
-function commSetReply(postId, username){
-  commState.replyTo = { postId, username };
-  const hint = document.getElementById('commReplyHint_' + postId);
-  if (hint) { hint.textContent = '回复 @' + username; hint.style.display = 'block'; }
-  const input = document.getElementById('commCommentInput_' + postId);
-  if (input) { input.focus(); input.placeholder = '回复 @' + username; }
-}
-function commReplyChat(username){
-  commState.chatReplyTo = username;
-  const hint = document.getElementById('commChatReplyHint');
-  if (hint) { hint.textContent = '回复 @' + username; hint.style.display = 'inline-block'; }
-  const input = document.getElementById('commChatInput');
-  if (input) input.focus();
-}
-function renderCommunity(forceRebuild){
-  const root = document.getElementById('communityTab'); if (!root) return;
-  const st = root.scrollTop;
-  commEnsurePolling();
-  if (!commState.hydrated) {
-    commState.hydrated = true;
-    const c = commLoadCache();
-    if (c) { commState.posts = c.posts || []; commState.comments = c.comments || {}; commState.messages = c.messages || []; commState.announcements = c.announcements || []; }
-    commRefresh();
-    return;  /* 首次数据拉取后会自动构建骨架 */
+    try {
+      const anns = await sbFetch('/rest/v1/qx_comm_announcements?order=created_at.desc&limit=50&select=*');
+      commState.announcements = (anns || []).filter(a => a.type !== 'sys:admin_sync');
+    } catch(e){}
+    try { renderTicker(); } catch(e){}
+    commState.cloudOk = true;
+  } catch (e) {
+    commState.cloudOk = false;
   }
-  if (!COMM_CLOUD_READY) {
-    root.innerHTML = `<div class="comm-wrap"><div class="comm-auth-card"><div class="comm-auth-title">贵州文旅新闻速递</div><div class="comm-auth-sub">云端社区正在接入中，请稍后再来 🛠️</div></div></div>`;
-    commState.uiBuilt = false;
-    return;
-  }
-  const sessionKey = commState.session ? commState.session.username : '';
-  if (forceRebuild || !commState.uiBuilt || commState.lastSessionKey !== sessionKey) {
-    commState.lastSessionKey = sessionKey;
-    commState.uiBuilt = true;
-    root.innerHTML = buildCommunityShell();
-    commRenderPhotos();
-    commRenderChat(false);
-    commRenderFeed();
-    return;
-  }
-  /* 已构建：仅增量刷新（点赞 / 轮询等），不碰输入框、不刷新整页 */
-  commRenderFeed();
-  const cl = document.getElementById('commChatList'); if (cl) commRenderChat(false);
-  if (st) root.scrollTop = st;
 }
 
-
+/* 公告变化不频繁：60 秒轮询足够（原 6 秒轮询是给聊天用的，已随 UGC 一并移除） */
+function commEnsurePolling(){
+  if (commState.pollTimer) return;
+  commState.pollTimer = setInterval(commRefresh, 60000);
+}
 const markers = {};
 let customIdCounter = 1000;
 
