@@ -1120,6 +1120,7 @@ function renderHotCards() {
       <div class="hot-toolbar-btns">
         <button class="hot-mini-btn" onclick="reloadFromAdmin()">🔄 刷新数据</button>
         <button class="hot-mini-btn" onclick="importSyncCode()">📋 导入同步码</button>
+        <button class="hot-mini-btn" onclick="window.open('admin/','_blank')">🛠 后台管理</button>
       </div>`;
   }
   container.innerHTML = cards.length > 0 ? cards.map((c, idx) => `
