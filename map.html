@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>黔行 · 贵州全域全息导游图</title>
+<title>黔行 · 贵州全域全息导游图 — 免费景点攻略 · 团购价格 · 实时天气</title>
+<meta name="description" content="黔行：贵州全域导游图，覆盖贵阳/遵义/安顺/黔东南等9市州46+网红景点，提供避坑指南、团购价格、路线规划、实时天气与文旅资讯，手机电脑通用。">
+<meta name="keywords" content="贵州旅游,贵州导游图,黔行,贵州景点攻略,黄果树,西江千户苗寨,梵净山,荔波小七孔,贵州自由行">
+<meta property="og:title" content="黔行 · 贵州全域全息导游图">
+<meta property="og:description" content="贵州9市州46+网红景点：避坑指南 · 团购价格 · 路线规划 · 实时天气">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raojiayong-lab.github.io/qianxing/map.html">
+<meta name="theme-color" content="#1f4f3a">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; connect-src 'self' https://isauemozgewpzrowsvgj.supabase.co wss://isauemozgewpzrowsvgj.supabase.co https://api.open-meteo.com https://geocoding-api.open-meteo.com https://air-quality-api.open-meteo.com; font-src 'self' data:; media-src 'self' data: https:; object-src 'none'; base-uri 'self'; form-action 'self' https://uri.amap.com">
 <link rel="stylesheet" href="leaflet/leaflet.css" />
 <link rel="dns-prefetch" href="https://webrd01.is.autonavi.com" />
 <script src="leaflet/leaflet.js"></script>
@@ -1163,7 +1171,7 @@ function openHotModal(index) {
 
   if (card.gallery && card.gallery.length > 0) {
     galleryWrap.style.display = 'block';
-    galleryEl.innerHTML = card.gallery.map(url => { const u = qxImgUrl(url); return `<img src="${u}" onclick="window.open('${u}','_blank')">`; }).join('');
+    galleryEl.innerHTML = card.gallery.map((url, gi) => { const u = qxImgUrl(url); return `<img src="${u}" alt="${commEsc(card.title)} 图${gi+1}" loading="lazy" onclick="window.open('${u}','_blank')">`; }).join('');
   } else {
     galleryWrap.style.display = 'none';
     galleryEl.innerHTML = '';
@@ -1207,7 +1215,7 @@ function openSpotDetail(spot) {
     ${!isCustom ? `<div class="sd-env" id="sdWeather-${spot.id}">${cachedWxHtml}</div>` : ''}
     ${!isCustom && (cachedWx && cachedWx.forecast && cachedWx.forecast.length) ? `<div class="wx-forecast" id="sdForecast-${spot.id}">${forecastHtml(cachedWx)}</div>` : ''}
     <div class="sd-desc">${spot.desc}</div>
-    ${!isCustom && spot.gallery && spot.gallery.length > 0 ? `<div class="sd-gallery-title">📸 景点图库 (${spot.gallery.length})</div><div class="sd-gallery">${spot.gallery.map(url=>{const u=qxImgUrl(url);return `<div class="sd-gallery-item" style="background-image:url('${u}')" onclick="commLightbox('${u}')"></div>`;}).join('')}</div>` : ''}
+    ${!isCustom && spot.gallery && spot.gallery.length > 0 ? `<div class="sd-gallery-title">📸 景点图库 (${spot.gallery.length})</div><div class="sd-gallery">${spot.gallery.map((url, gi)=>{const u=qxImgUrl(url);return `<div class="sd-gallery-item" style="background-image:url('${u}')" role="img" aria-label="${commEsc(spot.name)} 图库图${gi+1}" onclick="commLightbox('${u}')"></div>`;}).join('')}</div>` : ''}
     ${!isCustom && spot.richContent ? `<div class="sd-rich">${spot.richContent}</div>` : ''}
     ${!isCustom && spot.articleLinks && spot.articleLinks.length > 0 ? `<div class="sd-articles">${spot.articleLinks.map(l=>`<a href="${l.url}" target="_blank" class="sd-article"><span>📄</span><span>${l.title}</span><span>→</span></a>`).join('')}</div>` : ''}
     ${!isCustom ? `<div class="sd-guide" id="sdGuideBox"><b>📝 攻略</b>${spot.guide||'暂无详细攻略信息。'}</div>` : ''}
@@ -1736,7 +1744,7 @@ async function sbFetch(path, opts = {}) {
 function commLightbox(src){
   const ov = document.createElement('div');
   ov.className = 'comm-lightbox'; ov.onclick = ()=>ov.remove();
-  ov.innerHTML = `<img src="${commEsc(src)}">`;
+  ov.innerHTML = `<img src="${commEsc(src)}" alt="放大查看图片" role="dialog" aria-modal="true" aria-label="图片灯箱，点击空白处关闭">`;
   document.body.appendChild(ov);
 }
 
