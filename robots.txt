@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /qianxing/admin/
+
+Sitemap: https://raojiayong-lab.github.io/qianxing/sitemap.xml
